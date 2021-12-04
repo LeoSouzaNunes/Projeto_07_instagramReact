@@ -2,11 +2,19 @@ export default function () {
 
     return (
         <div class="fundo-mobile">
-            <ion-icon name="home"></ion-icon>
-            <ion-icon name="search-outline"></ion-icon>
-            <ion-icon name="add-circle-outline"></ion-icon>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="person-outline"></ion-icon>
+            <Icon type="home" />
+            <Icon type="search-outline" />
+            <Icon type="add-circle-outline" />
+            <Icon type="heart-outline" />
+            <Icon type="person-outline" />
         </div>
     )
+}
+
+function Icon(props) {
+
+    return (
+        <ion-icon name={props.type}></ion-icon>
+    )
+
 }
